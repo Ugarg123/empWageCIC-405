@@ -27,14 +27,14 @@ else
                 echo "Emp is absent."
         fi
 fi
-function CalculatedEmpWage(){
+function CalculatEmpWage(){
         empWorked=$1
         wagePerHour=$2
         echo $(($empWorked*$wagePerHour))
 }
 if [ $isPresent -eq $valueForPresent ] || [ $isPresent -eq $valueForPartTime ]
 then
-        totalSalary=`CalculatedEmpWage $empWorkedHour $empWage`
+        totalSalary=`CalculatEmpWage $empWorkedHour $empWage`
 fi
 
 echo "Total Salary for one day "$totalSalary
